@@ -35,12 +35,12 @@ import kotlin.math.max
  * Date：2020/12/12
  * Des：导航栏
  */
-//@Suppress("unused")
+@Suppress("unused")
 class NavigationView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet?,
     defStyleAttr: Int = 0
-) :ViewGroup(context, attrs, defStyleAttr) {
+) : ViewGroup(context, attrs, defStyleAttr) {
 
     private lateinit var mViewPager: ViewPager
 
@@ -432,7 +432,7 @@ class NavigationView @JvmOverloads constructor(
         val title: String
     )
 
-    inner class Controller : BottomLayoutController {
+    private inner class Controller : BottomLayoutController {
         private lateinit var animator: ObjectAnimator
         private var hide = false
 

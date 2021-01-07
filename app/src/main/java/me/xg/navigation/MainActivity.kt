@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import me.xg.navigation.databinding.ActivityMainBinding
-import me.xg.widget.navigation.MaterialMode
 import me.xg.widget.navigation.listener.OnTabItemSelectedListener
 
 class MainActivity : AppCompatActivity() {

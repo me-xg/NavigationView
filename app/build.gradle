@@ -1,11 +1,12 @@
+/*apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'*/
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
-
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "me.xg.navigation"
@@ -16,7 +17,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    viewBinding {
+        enabled = true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -29,9 +32,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
-    }
-    buildFeatures {
-        viewBinding = true
     }
 }
 
